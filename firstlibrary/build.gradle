@@ -13,13 +13,17 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
+        consumerProguardFiles 'proguard-rules.pro'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
 
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -51,8 +55,8 @@ ext {
     bintrayName = 'com.ekbana.myfirstlibrary' // Bintray package name
 
     publishedGroupId = 'com.ekbana.myfirstlibrary' // Group ID of the SDK which will be added in implementation line of gradle
-    artifact = 'preference' // Artifact ID of the SDK which will be added in implementation line of gradle
-    libraryVersion = '0.0.1' // Version of the library you created in Bintray
+    artifact = 'myLibrary' // Artifact ID of the SDK which will be added in implementation line of gradle
+    libraryVersion = '0.0.2' // Version of the library you created in Bintray
 
     libraryName = 'FirstLibrary' // It is generally the module name
     libraryDescription = 'Utlity to use shared preference in your app.' // Small description of the library

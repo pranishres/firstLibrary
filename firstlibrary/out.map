@@ -2,6 +2,8 @@
 # compiler_version: 1.4.77
 # min_api: 1
 com.ekbana.firstlibrary.BuildConfig -> com.ekbana.firstlibrary.BuildConfig:
-    1:1:void <init>():6:6 -> <init>
+    boolean DEBUG -> a
+    7:7:void <clinit>() -> <clinit>
+    6:6:void <init>() -> <init>
 com.ekbana.firstlibrary.MessageUtil -> com.ekbana.firstlibrary.MessageUtil:
-    1:1:void <init>():7:7 -> <init>
+    7:7:void <init>() -> <init>
