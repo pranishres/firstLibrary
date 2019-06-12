@@ -51,12 +51,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 ext {
-    bintrayRepo = 'TestPranish' // Name of the Bintray repo you created
-    bintrayName = 'com.ekbana.myfirstlibrary' // Bintray package name
+    bintrayRepo = 'Pranish' // Name of the Bintray repo you created
+    bintrayName = 'com.ekbana.myfirstlibrary.lib' // Bintray package name
 
-    publishedGroupId = 'com.ekbana.myfirstlibrary' // Group ID of the SDK which will be added in implementation line of gradle
-    artifact = 'myLibrary' // Artifact ID of the SDK which will be added in implementation line of gradle
-    libraryVersion = '0.0.2' // Version of the library you created in Bintray
+    publishedGroupId = 'com.ekbana.myfirstlibrary.lib' // Group ID of the SDK which will be added in implementation line of gradle
+    artifact = 'pranishLibrary' // Artifact ID of the SDK which will be added in implementation line of gradle
+    libraryVersion = '1.0.0' // Version of the library you created in Bintray
 
     libraryName = 'FirstLibrary' // It is generally the module name
     libraryDescription = 'Utlity to use shared preference in your app.' // Small description of the library
@@ -64,7 +64,7 @@ ext {
     siteUrl = 'https://github.com/pranishres/firstLibrary'
     gitUrl = 'https://github.com/pranishres/firstLibrary'
 
-    developerId = 'pranishrestha'
+    developerId = 'pranishres'
     developerName = 'Pranish Shrestha'
     developerEmail = 'pranish.shres@gmail.com'
 
